@@ -1,12 +1,7 @@
-LITTLE ABOUT THR INTEREST CALCULATOR
-plain vanilla.js was used 
-# PiggyVest Interest calculator
+# PIGGYVEST INTEREST CALCULATOR
 
 ## Introduction
-
-An application that provides the frontend for users to calculate the interest on their savings based on their different plans. You can click [here](https://github.com/teepha/pizza_place/) to check the backend implementation.
-
-## Table of Contents
+An application that aids the calculation of customers interests which is determined by the amount and saving plan of the customer
 
 1. <a href="#hosted-app">Link to Hosted App</a>
 2. <a href="#application-features">Application Features</a>
@@ -16,17 +11,15 @@ An application that provides the frontend for users to calculate the interest on
 
 ## Link to Hosted App
 
-- [Github pages link](https://esi-meci.github.io//)
+  https://esi-meci.github.io/
 
-This project was made with HTML, CSS and plain vanilla.js
-
-## Application Features
-
+## APPLICATION FEATURES AND DETAIL
+This project was made with HTML, CSS and plain vanilla.js 
 - Enter Amount
 - Enter Duration
 - Pick Investment Plan
-- Calculate Interest
-- Display Result for Interest
+- And click Calculate
+*your interest will be displayed based on the plan selected
 
 ## How To Use
 
