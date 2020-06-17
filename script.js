@@ -11,6 +11,7 @@ const rate = {
   piggy: 10,
   flexn: 10,
   target: 10,
+  safe: 8,
 };
 /* 
 A = P (1 + r ÷ n) ^ nt
