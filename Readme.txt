@@ -15,7 +15,7 @@ It calculate a piggyVest's customer interest, once the customers inputs the amou
 - Enter Duration
 - Pick Investment Plan
 - And click Calculate
-*your interest will be displayed based on the plan selected
+* your interest will be displayed based on the plan selected
 
 HOW TO CLONE THE REPOSITORY 
 To clone and run this application, you'll need [Git](https://git-scm.com) installed on your computer. From your command line:
