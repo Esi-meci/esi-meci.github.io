@@ -8,7 +8,7 @@
 
 ## APPLICATION FEATURES AND DETAIL
 This project was made with HTML, CSS and plain VANILLA.JS 
-Its calculate a piggyVest's customer interest, once the customers input the amount he/want to check the interest for and selects a plan this calculator, calculate the interest based on the plan 
+It calculate a piggyVest's customer interest, once the customers inputs the amount he or she wants to check the interest for and selects a plan, this calculator calculates the interest based on the plan 
 
 ## HOW TO USE
 - Enter Amount
