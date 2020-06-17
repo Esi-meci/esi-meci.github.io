@@ -37,29 +37,32 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12" >
                 <div class="card pt-3 pr-3 pl-3 pb-3 pt-lg-5 pr-lg-5 pl-lg-5 pb-lg-5" ">
-                    <form>
+                    <form id="interest-form">
                         <h3>INVESTMENT CALCULATOR</h3>
                         <br/>
                         <div class="form-group">
                           <label for="exampleFormControlInput1">AMOUNT</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          <input type="number" class="form-control" id="amount" placeholder="Amount">
                         </div>
                         <div class="form-group">
+                            <label for="exampleFormControlInput1">AMOUNT</label>
+                            <input type="number" class="form-control" id="duration" placeholder="Duration">
+                          </div>
+                        <div class="form-group">
                           <label for="exampleFormControlSelect1">PIGGYVEST INVESTMENT PLAN</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                          <select class="form-control" id="plan">
+                            <option value="piggy">PiggyBank</option>
+                            <option value="safe">SafeLock</option>
+                            <option value="taget">Target</option>
+                            <option value="flexn">Flex Naira</option>
                           </select>
                         </div>
                         <div class="form-group">
-                            <button class="button" type="Submit"> CALCULATE </button>
+                            <button id="calculate" class="button" type="Submit"> CALCULATE </button>
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlTextarea1">RESULT FOR YOUR INVESTMENT:</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <textarea  id="message" disabled class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                       </form>        
                 </div> 
@@ -76,5 +79,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
