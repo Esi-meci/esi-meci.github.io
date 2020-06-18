@@ -28,3 +28,15 @@ $ git clone https://github.com/Esi-meci/INTERESTcalculator.git
 # Go into the repository
 $ cd Esi-meci/INTERESTcalculator.git
 
+
+@Esi
+@Aj
+@yanmifeakeju
+@kenelight4u
+@Resourcefulmind
+@Adeola\\\_ui/ux
+@peace
+@kenechi
+@boluwatifeCodes
+@sylvercodez
+Godliver
