@@ -53,6 +53,8 @@ document.querySelector('#message').innerHTML = `&#8358 ${interest}`;
             // Display the chart inside the <div> element with id="piechart"
             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
             chart.draw(data, options);
+
+
 }
 
 

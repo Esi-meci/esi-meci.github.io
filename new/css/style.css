@@ -56,9 +56,9 @@ header {
   line-height: 100px;
   float: left;
   text-transform: uppercase;
-  height: 50px;
-  width: 150px;
-  margin-top: 25px;
+  height: 70px;
+  width: 200px;
+  margin-top: 10px;
 }
 .menu {
   float: right;
@@ -151,7 +151,7 @@ button[type="submit"] {
   padding: 10px 20px;
   text-transform: uppercase;
   color: #fff;
-  width: 80%;
+  max-width: 40%;
   margin: 0 auto;
   text-align: center;
   display: block;
@@ -168,13 +168,19 @@ button:hover {
   border-radius: 4px;
   padding: 20px 10px;
 }
-
 .footer{
     padding: 20px 5px;
     background: rgba(0, 136, 204, 0.08);
 }
-
-@media screen and (max-width: 800px) {
+.site-navbar {
+  margin-left: 3rem;
+}
+@media screen and (max-width: 760px) {
+  .hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   .show-menu-btn,
   .hide-menu-btn {
     display: block;
@@ -183,6 +189,7 @@ button:hover {
   .hide-menu-btn {
     color: #fff;
   }
+
   .menu {
     position: fixed;
     height: 100vh;
@@ -220,4 +227,7 @@ button:hover {
     max-width: 100%;
     height: auto;
   }
+}
+.site-navbar {
+  margin-left: 1rem;
 }
