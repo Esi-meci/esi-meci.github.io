@@ -14,6 +14,13 @@ a{
 }
 
 /* TEXTS */
+header {
+  margin-bottom: 3rem;
+  background-color: white;
+}
+.header-image {
+  margin-bottom: 3rem;
+}
 .hero-text {
   color: #083e9e;
   font-weight: 600;
@@ -22,6 +29,7 @@ a{
 .header-body {
   margin-bottom: 40px;
 }
+
 .earning {
   margin-bottom: 5px;
 }
@@ -29,7 +37,7 @@ a{
   height: 40px;
 }
 .media i {
-    margin-right: 20px;
+  margin-right: 20px;
   padding: 15px;
   color : #fff;
   background-color: rgb(37, 145, 37);
@@ -38,6 +46,7 @@ a{
 .media h4 {
   color: #062863;
 }
+
 
 /* NAVBAR */
 .site-navbar {
@@ -67,9 +76,16 @@ a{
   padding: 10px 10px;
   transition: all 0.4s;
 }
+.menu .navbar-link:hover {
+  color: #30c57b;
+}
 .menu .navbar-link.create{
-    border : 1px solid #414851;
+    border : 1px solid #007bff;
     border-radius: 4px;
+}
+.menu .navbar-link.create:hover {
+  background: rgb(6, 43, 111);
+  color: #fff;
 }
 .show-menu-btn {
   float: right;
@@ -130,7 +146,7 @@ input[type="number"] {
   background-repeat: no-repeat;
 }
 button[type="submit"] {
-  background: #30c57b;
+  background: #007bff;
   border-radius: 10px 10px 10px 0px;
   border: none;
   padding: 10px 20px;
@@ -142,6 +158,9 @@ button[type="submit"] {
   display: block;
   cursor: pointer;
   transition: all 0.5s ease;
+}
+button:hover {
+    background: rgb(6, 43, 111);
 }
 
 /* payback */
