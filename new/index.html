@@ -21,7 +21,7 @@
                 <div class="col-md-12">
                     <nav>
                         <div class="site-navbar">
-                            <img src="img/piggy.png" alt="" class="logo">
+                            <img src="img/piggy.png" alt="" class="logo ">
                             <input type="checkbox" name="" id="chk">
                             <label for="chk" class="show-menu-btn">
                                 <i class="fa fa-navicon"></i>
@@ -31,8 +31,9 @@
                                 <li><a href="https://www.piggyvest.com/stories" class="navbar-link">Stories</a></li>
                                 <li><a href="https://www.piggyvest.com/faq" class="navbar-link">FAQ</a></li>
                                 <li><a href="https://medium.com/@Piggyvest" target="_blank" class="navbar-link">Blog</a></li>
+                                <li><a href="#" class="navbar-link active">Services</a></li>
                                 <li><a href="https://www.piggyvest.com/login" class="navbar-link">Login</a></li>
-                                <li><a href="https://dashboard.piggyvest.com/register" class="navbar-link create">Create a free Account</a></li>
+                                <li><a href="https://dashboard.piggyvest.com/register" class="navbar-link create nowrap">Create a free Account</a></li>
                                 <label for="chk" class="hide-menu-btn">
                                     <i class="fa fa-times"></i>
                                 </label>
@@ -44,13 +45,62 @@
         </div>
     </header>
 
-    <section class="main-section">
-        <div class="container">
+    <section class="main-section mb-lg-5 mb-3">
+        <div class="container-fluid mr-2 mr-lg-5 mr-md-3">
             <div class="row">
-                <div class="col-md-6 mb-5">
+                <div class="col-md-6">
                     <div class="header-image">
-                        <img src="img/graph.png" alt="" class="img-fluid">
+                        <img src="img/girl.png" alt="" class="img-fluid hide">
                     </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="" id="interest-form" class="pr-2 pr-lg-5 pr-md-3">
+                        <div class="form-field">
+                            <label for="plan">Choose PiggyVest Plan</label>
+                            <select name="" id="plan" required>
+                                <option value="piggy">Piggy Bank</option>
+                                <option value="safe">Safe</option>
+                                <option value="target">Target</option>
+                                <option value="flexn">Flex Naira</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="amount">What is your Investment Goal?</label>
+                            <span class="icon">&#8358;</span>
+                            <input type="number" name="amount" id="amount" required>
+                        </div>
+
+                        <div class="form-field">
+                            <div class="form-row">
+                                <div class="form-group col-8">
+                                    <div class="form-field">
+                                        <label for="amount">How much can I Save?</label>
+                                        <span class="icon">&#8358;</span>
+                                        <input type="number" name="amount" id="amount" required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-4">
+                                    <div class="form-field">
+                                        <label for="duration">Duration</label>
+                                        <select name="" id="duration" required>
+                                            <option value="1">Daily</option>
+                                            <option value="2">Weekly</option>
+                                            <option value="3">Monthly</option>
+                                            <option value="4">Yearly</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div
+                        </div>
+                        <button type="submit" id="calculate">Calculate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mr-2 mr-lg-5 mr-md-3 mt-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 mb-5"> 
                     <div class="header-main">
                         <h1 class="hero-text">The Better Way <br> to save and Invest</h1>
                     </div>
@@ -59,66 +109,49 @@
                         <p class="earning">Earn over 25% return on investments.</p>
                     </div>
                     <div class="download-links">
-                        <a href="#"><img src="img/iosbadge-101-image.png" alt="" class="img-fluid"></a>
-                        <a href="#"><img src="img/google-play-badge.png" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="img/iosbadge-101-image.png" alt="" class="img-fluid float-left"></a>
+                        <a href="#"><img src="img/google-play-badge.png" alt="" class="img-fluid pl-lg-5 pl-3"></a>
                     </div>
                 </div>
-                <div class="col-md-6 mb-5">
-                    <form action="" id="interest-form">
-                        <div class="form-field">
-                            <label for="amount">Amount to Invest</label>
-                            <span class="icon">&#8358;</span>
-                            <input type="number" name="amount" id="amount" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="plan">Investment Type</label>
-                            <select name="" id="plan" required>
-                                <option value="piggy">Piggy</option>
-                                <option value="safe">Safe</option>
-                                <option value="target">Target</option>
-            <option value="flexn">Flexn</option>
-                            </select>
-                        </div>
-                        <div class="form-field">
-                            <label for="duration">Duration</label>
-                            <select name="" id="duration" required>
-                                <option value="1">1 months</option>
-                                <option value="2">2 months</option>
-                                <option value="3">3 months</option>
-                                <option value="4">4 months</option>
-                                <option value="5">5 months</option>
-                                <option value="6">6 months</option>
-                                <option value="8">7 months</option>
-                                <option value="9">9 months</option>
-                                <option value="10">10 months</option>
-                                <option value="11">11 months</option>
-                                <option value="12">12 months</option>
-                            </select>
-                        </div>
-                        <button type="submit" id="calculate">Calculate</button>
-                    </form>
 
-                    <div class="payback-results mt-5">
+                <div class="col-md-6 col-lg-6 ">
+                    <div class="payback-results mb-lg-5">
                         <h6 class="mb-3">Payback Results</h6>
                         <div class="results d-flex justify-content-around mb-4">
                             <span>
-                                <h6>Total Value</h6>
+                                <h6>Duration</h6>
                                 <h5 class="font-weight-bold" id="message" >0</h5>
                             </span>
 
                             <span>
-                                <h6>Interest Value</h6>
+                                <h6>Total Amount</h6>
+                                <h5 class="font-weight-bold" id="interest" >0</h5>
+                            </span>
+                        </div>
+                        <div class="results d-flex justify-content-around mb-4">
+                            <span>
+                                <h6>Interest</h6>
+                                <h5 class="font-weight-bold" id="message" >0</h5>
+                            </span>
+
+                            <span>
+                                <h6>Total Gained</h6>
                                 <h5 class="font-weight-bold" id="interest" >0</h5>
                             </span>
                         </div>
                         <div id="piechart"></div>
+                    </div>
+                    
+                    <div class="mt-lg-5 pl-lg-5 mt-5">
+                        <button class="float-left" type="submit" id="">SHARE</button>
+                        <button class="nowrap" type="submit" id="">EXPORT AS PDF</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="footer mt-5">
+    <section class="footer mt-5 mt-lg-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
