@@ -63,29 +63,38 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-5">
-                    <form action="">
+                    <form action="" id="interest-form">
                         <div class="form-field">
                             <label for="amount">Amount to Invest</label>
                             <span class="icon">&#8358;</span>
-                            <input type="number" name="amount" id="amount">
+                            <input type="number" name="amount" id="amount" required>
                         </div>
                         <div class="form-field">
-                            <label for="amount">Investment Type</label>
-                            <select name="" id="">
-                                <option value="piggybank">Piggybank</option>
-                                <option value="piggybank">Piggybank</option>
-                                <option value="">Piggybank</option>
+                            <label for="plan">Investment Type</label>
+                            <select name="" id="plan" required>
+                                <option value="piggy">Piggy</option>
+                                <option value="safe">Safe</option>
+                                <option value="target">Target</option>
+            <option value="flexn">Flexn</option>
                             </select>
                         </div>
                         <div class="form-field">
-                            <label for="amount">Duration</label>
-                            <select name="" id="">
+                            <label for="duration">Duration</label>
+                            <select name="" id="duration" required>
                                 <option value="1">1 months</option>
                                 <option value="2">2 months</option>
                                 <option value="3">3 months</option>
+<option value="4">4 months</option>
+<option value="5">5 months</option>
+<option value="6">6 months</option>
+<option value="8">7 months</option>
+<option value="9">9 months</option>
+<option value="10">10 months</option>
+<option value="11">11 months</option>
+<option value="12">12 months</option>
                             </select>
                         </div>
-                        <button type="submit">Calculate</button>
+                        <button type="submit" id="calculate" >Calculate</button>
                     </form>
 
                     <div class="payback-results mt-5">
@@ -93,12 +102,12 @@
                         <div class="results d-flex justify-content-around mb-4">
                             <span>
                                 <h6>Total Value</h6>
-                                <h5 class="font-weight-bold">$70,000</h5>
+                                <h5 class="font-weight-bold" id="message" >0</h5>
                             </span>
 
                             <span>
                                 <h6>Interest Value</h6>
-                                <h5 class="font-weight-bol">$70,000</h5>
+                                <h5 class="font-weight-bold" id="interest" >0</h5>
                             </span>
                         </div>
                         <div id="piechart"></div>
@@ -125,6 +134,11 @@
         </div>
     </section>
 
+ <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -139,28 +153,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
-    <script type="text/javascript">
-        // Load google charts
-        google.charts.load('current', { 'packages': ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
-
-        // Draw the chart and set the chart values
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                ['Initial Investment', 8],
-                ['Total Interest', 2],
-            ]);
-
-            // Optional; add a title and set the width and height of the chart
-            var options = { 'title': 'Interest Charts', 'width': "100%", 'height': 400 };
-
-            // Display the chart inside the <div> element with id="piechart"
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-            chart.draw(data, options);
-        }
-    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
 </body>
 
 </html>
