@@ -5,7 +5,7 @@ const savingAmonut = document.querySelector('#saving-amount');
 const duration = document.querySelector('#duration');
 const plan = document.querySelector('#plan');
 const calculate = document.querySelector('#calculate');
-
+const results = document.querySelector('#result');
 calculate.addEventListener('click', calculateInterest);
 
 const rate = {
@@ -43,8 +43,8 @@ function calculateInterest(e) {
   const result = `If you save ${savingAmonut.value} on a  ${
     duration.value
   } basis your will have ${Math.floor(interest)} in one year`;
-
-  console.log(result);
+    results =result;
+//   console.log(result);
 
   // const futureValue = expectAmount.value;
 
