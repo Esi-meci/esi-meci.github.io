@@ -5,7 +5,7 @@ const savingAmonut = document.querySelector('#saving-amount');
 const duration = document.querySelector('#duration');
 const plan = document.querySelector('#plan');
 const calculate = document.querySelector('#calculate');
-const results = document.querySelector('#result');
+var results = document.querySelector('#result');
 calculate.addEventListener('click', calculateInterest);
 
 const rate = {
