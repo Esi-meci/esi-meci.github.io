@@ -1,12 +1,17 @@
 //UI elements
-const form = document.querySelector('#interest-form');
-const expectAmount = document.querySelector('#goal-amount');
-const savingAmonut = document.querySelector('#saving-amount');
-const duration = document.querySelector('#duration');
-const plan = document.querySelector('#plan');
-const calculate = document.querySelector('#calculate');
-var results = document.querySelector('#result').innerhtml;
-calculate.addEventListener('click', calculateInterest);
+const form = document.querySelector("#interest-form");
+const expectAmount = document.querySelector("#goal-amount");
+const savingAmonut = document.querySelector("#saving-amount");
+const duration = document.querySelector("#duration");
+const plan = document.querySelector("#plan");
+const calculate = document.querySelector("#calculate");
+var results = document.querySelector("#result");
+const message = document.querySelector("#message");
+const frequency = document.querySelector("#frequency");
+const total = document.querySelector("#total");
+
+
+calculate.addEventListener("click", calculateInterest);
 
 const rate = {
   piggy: 10,
@@ -26,16 +31,16 @@ function calculateInterest(e) {
   e.preventDefault();
   let amount;
 
-  if (duration.value === 'daily') {
+  if (duration.value === "daily") {
     amount = savingAmonut.value * 30;
-  } else if (duration.value === 'weekly') {
+  } else if (duration.value === "weekly") {
     amount = savingAmonut.value * 4;
   } else {
     amount = savingAmonut.value;
   }
 
-  const goal = expectAmount.value;
-  let p;
+  // const goal = expectAmount.value;
+  // let p;
   const calRate = 1 + 10 / 100 / 12;
   const calculateInt = Math.pow(calRate, 12) - 1;
   const interest = (amount * calculateInt) / (rate[plan.value] / 100 / 12);
@@ -43,8 +48,13 @@ function calculateInterest(e) {
   const result = `If you save ${savingAmonut.value} on a  ${
     duration.value
   } basis your will have ${Math.floor(interest)} in one year`;
-    results =result;
-//   console.log(result);
+
+  message.innerHTML = savingAmonut.value;
+  frequency.innerHTML = duration.value;
+  total.innerHTML = Math.floor(interest);
+
+  // results.innerHTML = result;
+  //   console.log(result);
 
   // const futureValue = expectAmount.value;
 

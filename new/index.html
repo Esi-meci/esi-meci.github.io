@@ -74,24 +74,24 @@
                                 <option value="flexn">Flex Naira</option>
                             </select>
                         </div>
-                        <div class="form-field">
-                            <label for="amount">What is your Investment Goal?</label>
+                        <!-- <div class="form-field">
+                            <label for="amount">What is my Expected Earnings?</label>
                             <span class="icon">&#8358;</span>
                             <input type="number" name="amount" id="goal-amount" required>
-                        </div>
+                        </div> -->
 
                         <div class="form-field">
                             <div class="form-row">
-                                <div class="form-group col-8">
+                                <div class="form-group col-12">
                                     <div class="form-field">
-                                        <label for="amount">Regular Savings</label>
+                                        <label for="amount">How much do you plan of saving?</label>
                                         <span class="icon">&#8358;</span>
                                         <input type="number" name="amount" id="saving-amount" required>
                                     </div>
                                 </div>
-                                <div class="form-group col-4">
+                                <div class="form-group col-12">
                                     <div class="form-field">
-                                        <label for="duration">Duration</label>
+                                        <label for="duration">How frequently can you save this amount?</label>
                                         <select name="" id="duration" required>
                                             <option value="daily">Daily</option>
                                             <option value="weekly">Weekly</option>
@@ -110,36 +110,35 @@
         <div class="container-fluid mr-2 mr-lg-5 mr-md-3 mt-2">
             <div class="row">
                 <div class="col-md-6 col-lg-6  d-flex justify-content-center "> 
-                    <img src="img/chart.png" alt="" id="chart-img" class="img-fluid">
                     <div id="piechart"></div>
                 </div>
 
                 <div class="col-md-6 col-lg-6 mt-5 ">
                     <div class="payback-results mb-lg-5 mr-lg-4 mr-2 ">
                         <h3 class="mb-3">Summary</h6>
-                        <h4 id='result'></h3>
-<!--                         <div class="results d-flex justify-content-around mb-4">
-                            <span>
-                                <h6>Duration</h6>
-                                <h5 class="font-weight-bold" id="message" >0</h5>
+                        <!-- <h4 id='result'></h4> -->
+                          <div class="results d-flex justify-content-around mb-4">
+                            <span class="text-center">
+                                <h6>You Save</h6>
+                                <h5 class="font-weight-bold text-center" id="message" >0</h5>
                             </span>
                             
-                            <span>
-                                <h6>Total Amount</h6>
-                                <h5 class="font-weight-bold" id="interest" >0</h5>
+                            <span class="text-center">
+                                <h6>Frequency</h6>
+                                <h5 class="font-weight-bold text-center" id="frequency" ></h5>
                             </span>
                         </div>
                         <div class="results d-flex justify-content-around mb-4">
-                            <span>
+                            <!-- <span>
                                 <h6>Interest</h6>
                                 <h5 class="font-weight-bold" id="message" >0</h5>
-                            </span>
+                            </span> -->
 
-                            <span>
-                                <h6>Total Gained</h6>
-                                <h5 class="font-weight-bold" id="interest" >0</h5>
+                            <span class="text-center">
+                                <h6>You earn</h6>
+                                <h5 class="font-weight-bold text-center" id="total" >0</h5>
                             </span>
-                        </div> -->
+                        </div>
                         
                     </div>
                     
