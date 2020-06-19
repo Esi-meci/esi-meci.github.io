@@ -12,6 +12,10 @@ a{
     outline: none;
     transition: all .5s;
 }
+/* h1, p {
+  margin: 0;
+  padding: 0;
+} */
 
 /* TEXTS */
 header {
@@ -19,15 +23,15 @@ header {
   background-color: white;
 }
 .header-image {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 .hero-text {
   color: #083e9e;
   font-weight: 600;
-  margin-bottom: 40px;
+  
 }
 .header-body {
-  margin-bottom: 40px;
+  margin-bottom: 1.5rem;
 }
 
 .earning {
@@ -161,6 +165,14 @@ button[type="submit"] {
 button:hover {
     background: rgb(6, 43, 111);
 }
+.header-image img {
+  max-width: 300px;
+  max-height: 200px;
+}
+/* #chart-img {
+  max-width: 550px;
+  max-height: 200px;
+} */
 
 /* payback */
 .payback-results {
@@ -175,11 +187,7 @@ button:hover {
 .site-navbar {
   margin-left: 3rem;
 }
-@media screen and (max-width: 760px) {
-  .hide {
-    display: none;
-  }
-}
+
 @media screen and (max-width: 768px) {
   .show-menu-btn,
   .hide-menu-btn {
