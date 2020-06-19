@@ -66,6 +66,22 @@ header {
   color: #062863;
 }
 
+.button-bottom{
+  background: #007bff;
+  border-radius: 10px 10px 10px 0px;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #fff !important;
+  max-width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  text-decoration: none !important;
+}
+
 /* NAVBAR */
 .site-navbar {
   height: 100px;
