@@ -27,8 +27,17 @@ header {
 }
 .hero-text {
   color: #083e9e;
-  font-weight: 600;
-  
+  font-weight: 600;  
+}
+.tab-links a{
+  padding: 10px 15px;
+  border: 1px solid #083e9e;
+  color: #083e9e;
+  text-decoration: none;
+}
+.tab-links .active{
+  background-color: #083e9e;
+  color: #fff;
 }
 .header-body {
   margin-bottom: 1.5rem;
@@ -227,6 +236,9 @@ button:hover {
   }
   #chk:checked ~ .menu {
     right: 0;
+  }
+  .download-links {
+    display: none;
   }
 }
 
