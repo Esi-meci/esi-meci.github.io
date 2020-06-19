@@ -31,9 +31,9 @@ function calculateInterest(e) {
   e.preventDefault();
   let amount;
 
-  if (duration.value === "daily") {
+  if (duration.value === "Daily") {
     amount = savingAmonut.value * 30;
-  } else if (duration.value === "weekly") {
+  } else if (duration.value === "Weekly") {
     amount = savingAmonut.value * 4;
   } else {
     amount = savingAmonut.value;
@@ -45,13 +45,15 @@ function calculateInterest(e) {
   const calculateInt = Math.pow(calRate, 12) - 1;
   const interest = (amount * calculateInt) / (rate[plan.value] / 100 / 12);
 
-  const result = `If you save ${savingAmonut.value} on a  ${
-    duration.value
-  } basis your will have ${Math.floor(interest)} in one year`;
+  // const result = `If you save ${savingAmonut.value} on a  ${
+  //   duration.value
+  // } basis your will have ${Math.floor(interest)} in one year`;
 
-  message.innerHTML = savingAmonut.value;
+  const youSave = `&#8358 ${savingAmonut.value}`
+  message.innerHTML = youSave;
   frequency.innerHTML = duration.value;
-  total.innerHTML = Math.floor(interest);
+  const finalOutput = `&#8358; ${Math.floor(interest)} per year`
+  total.innerHTML = finalOutput;
 
   // results.innerHTML = result;
   //   console.log(result);

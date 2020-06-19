@@ -171,9 +171,24 @@ button[type="submit"] {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-button:hover {
-    background: rgb(6, 43, 111);
+.button-bottom{
+  background: #007bff;
+  border-radius: 10px 10px 10px 0px;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #fff !important;
+  max-width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  text-decoration: none !important;
 }
+/* button:hover {
+    background: rgb(6, 43, 111);
+} */
 .header-image img {
   max-width: 300px;
   max-height: 200px;
@@ -237,7 +252,7 @@ button:hover {
   #chk:checked ~ .menu {
     right: 0;
   }
-  .download-links {
+  .download-links a {
     display: none;
   }
 }
