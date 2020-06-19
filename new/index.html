@@ -48,12 +48,22 @@
     <section class="main-section mb-lg-5 mb-3">
         <div class="container-fluid mr-2 mr-lg-5 mr-md-3">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="header-image">
-                        <img src="img/girl.png" alt="" class="img-fluid hide">
+                <div class="col-md-6 col-lg-6 ">
+                    <div class="header-image d-flex justify-content-center">
+                        <img src="img/girl.png" alt="" class="img">
+                    </div>
+                    <div class="header-body output text-center ">
+                        <h1 class="hero-text">The Better Way <br> to save and Invest</h1>
+                    
+                        <p class="earning">Earn 10% - 15.5% interests on savings.</p>
+                        <p class="earning">Earn over 25% return on investments.</p>
+                    </div>
+                    <div class="download-links d-flex justify-content-center ">
+                        <a href="#"><img src="img/iosbadge-101-image.png" alt="" class="img-fluid float-left"></a>
+                        <a href="#"><img src="img/google-play-badge.png" alt="" class="img-fluid pl-lg-5 pl-3"></a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-lg-6 d-flex justify-content-center mt-4">
                     <form action="" id="interest-form" class="pr-2 pr-lg-5 pr-md-3">
                         <div class="form-field">
                             <label for="plan">Choose PiggyVest Plan</label>
@@ -98,24 +108,15 @@
             </div>
         </div>
 
-        <div class="container-fluid mr-2 mr-lg-5 mr-md-3 mt-5">
+        <div class="container-fluid mr-2 mr-lg-5 mr-md-3 mt-2">
             <div class="row">
-                <div class="col-md-6 col-lg-6 mb-5"> 
-                    <div class="header-main">
-                        <h1 class="hero-text">The Better Way <br> to save and Invest</h1>
-                    </div>
-                    <div class="header-body">
-                        <p class="earning">Earn 10% - 15.5% interests on savings.</p>
-                        <p class="earning">Earn over 25% return on investments.</p>
-                    </div>
-                    <div class="download-links">
-                        <a href="#"><img src="img/iosbadge-101-image.png" alt="" class="img-fluid float-left"></a>
-                        <a href="#"><img src="img/google-play-badge.png" alt="" class="img-fluid pl-lg-5 pl-3"></a>
-                    </div>
+                <div class="col-md-6 col-lg-6  d-flex justify-content-center "> 
+                    <img src="img/chart.png" alt="" id="chart-img" class="img-fluid">
+                    <div id="piechart"></div>
                 </div>
 
-                <div class="col-md-6 col-lg-6 ">
-                    <div class="payback-results mb-lg-5">
+                <div class="col-md-6 col-lg-6 mt-5 ">
+                    <div class="payback-results mb-lg-5 mr-lg-4 mr-2 ">
                         <h6 class="mb-3">Payback Results</h6>
                         <div class="results d-flex justify-content-around mb-4">
                             <span>
@@ -139,11 +140,11 @@
                                 <h5 class="font-weight-bold" id="interest" >0</h5>
                             </span>
                         </div>
-                        <div id="piechart"></div>
+                        
                     </div>
                     
-                    <div class="mt-lg-5 pl-lg-5 mt-5">
-                        <button class="float-left" type="submit" id="">SHARE</button>
+                    <div class="mt-lg-5 pl-lg-5 mt-5 d-flex justify-content-center">
+                        <button class="" type="submit" id="">SHARE</button>
                         <button class="nowrap" type="submit" id="">EXPORT AS PDF</button>
                     </div>
                 </div>
