@@ -1,6 +1,7 @@
 //UI elements
 const form = document.querySelector('#interest-form');
-const principal = document.querySelector('#amount');
+const savingAmount = document.querySelector('#saving-amount');
+const expectAmount = document.querySelector('#goal-amount');
 const duration = document.querySelector('#duration');
 const plan = document.querySelector('#plan');
 const calculate = document.querySelector('#calculate');
@@ -23,43 +24,58 @@ A = $105.1166 (or $105.12 if your bank rounds up)
 */
 function calculateInterest(e) {
   e.preventDefault();
-  const amount = principal.value;
-  const calRate = rate[plan.value];
-  const time = duration.value;
+  const futureValue = expectAmount.value;
+  const presentValue = savingAmount.value;
+  const InterestRate = rate[plan.value] / 100 / 12;
 
-  const interest = Math.floor( amount * (1 + parseFloat(calRate / 100) * duration.value));
-const change = Math.floor(interest - amount);
+  //Divide future value by present value
 
-document.querySelector('#message').innerHTML = `&#8358 ${interest}`;
-  document.querySelector('#interest').innerHTML = `&#8358 ${change}`;
+  const futureDivByPre = Math.log(futureValue / presentValue);
+  const futureInterest = Math.log(1 + InterestRate);
 
+  const numberofMonths = futureDivByPre / futureInterest;
 
+  console.log(numberofMonths / 12);
 
- // Load google charts
-        google.charts.load('current', { 'packages': ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
+  //Calculate
 
-        // Draw the chart and set the chart values
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                ['Initial Investment', interest],
-                ['Total Interest', change],
-            ]);
+  // e.preventDefault();
+  // FV = Pmt x (((1 + r) ^ n) – 1) ÷ r)
+  // FV = 100 x (((1 + 0.004167) ^ 60) – 1) ÷ 0.004167)
+  // FV = 100 x (1.283 – 1) ÷ 0.004167
+  // FV = 100 x 68.0067
+  // FV = 6800.67
+  // const amount = principal.value;
+  // const calRate = rate[plan.value];
+  // const time = duration.value;
 
-            // Optional; add a title and set the width and height of the chart
-            var options = { 'title': 'Interest Charts', 'width': "100%", 'height': 400 };
+  // const interest = Math.floor(
+  //   amount * (1 + parseFloat(calRate / 100) * duration.value)
+  // );
+  // const change = Math.floor(interest - amount);
 
-            // Display the chart inside the <div> element with id="piechart"
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-            chart.draw(data, options);
+  // document.querySelector('#message').innerHTML = `&#8358 ${interest}`;
+  // document.querySelector('#interest').innerHTML = `&#8358 ${change}`;
 
+  // Load google charts
+  // google.charts.load('current', { packages: ['corechart'] });
+  // google.charts.setOnLoadCallback(drawChart);
 
+  // // Draw the chart and set the chart values
+  // function drawChart() {
+  //   var data = google.visualization.arrayToDataTable([
+  //     ['Task', 'Hours per Day'],
+  //     ['Initial Investment', interest],
+  //     ['Total Interest', change],
+  //   ]);
+
+  //   // Optional; add a title and set the width and height of the chart
+  //   var options = { title: 'Interest Charts', width: '100%', height: 400 };
+
+  //   // Display the chart inside the <div> element with id="piechart"
+  //   var chart = new google.visualization.PieChart(
+  //     document.getElementById('piechart')
+  //   );
+  //   chart.draw(data, options);
+  // }
 }
-
-
-}
-
-
-
-
